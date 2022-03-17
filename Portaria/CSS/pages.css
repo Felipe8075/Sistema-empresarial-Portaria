@@ -1,0 +1,1550 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.header{
+    position: fixed;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 8vh;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  margin-left: 800px;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    z-index: 2;
+    top: 8vh;
+    right: 0;
+    width: 15vw;
+    height: 92vh;
+    padding: 0;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    
+    padding-top: 8px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .nav-list li a{
+        padding: 0;
+        font-family: Archivo Narrow;
+        outline: none;
+        text-decoration: none;
+        color: #ffff;
+  }
+  .nav-list li{
+      cursor: pointer;
+      display: inline-block;
+      padding: 0;
+      font-family: Archivo Narrow;
+      outline: none;
+      text-decoration: none;
+      color: #ffff;
+  }
+
+  .nav-list li ul{
+    display: none;
+    width: 200px;
+    margin-top: -24px;
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+    background: #23232e;
+    margin-left: -200px;
+
+  }
+
+  .nav-list li ul li{
+    cursor: pointer;
+  }
+
+  .nav-list li:hover > ul{
+    display: block;
+  }
+
+  
+
+
+  .nav-list li:hover{
+      background-color: #3d3d50;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.titulouniforte{
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+.titulouniforte svg{
+    stroke-width: 1px;
+    stroke: #c09829;
+    width: 100%;
+    height: 100%;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: svganimatio 35s ease-out forwards infinite;
+}
+
+@keyframes svganimatio {
+    0%{
+        stroke-dashoffset: 1000;
+    }
+    70%{
+        stroke-dashoffset: 0;
+    }
+    50%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.vetorpredio{
+    margin: 0%;
+    width: 100px;   
+    height: 50px;
+    margin-top: -215px;
+    margin-bottom: 20px;
+}
+
+.vetorpredio svg{
+    stroke-width: 2px;
+    stroke: #c09829;
+    width: 300px;
+    height: 300px;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: svganimatio 35s ease-out forwards infinite;
+}
+
+/* Tratamento no cabeçalho II */
+
+.headeruserfuncionario{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.347);
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+}
+
+.headeruserfuncionario .conteudoheader{
+    width: 100%;
+    height: 100%;
+}
+
+.headeruserfuncionario .conteudoheader .vewperfil div{
+    text-align: center;
+    float: left;
+}
+.headeruserfuncionario .conteudoheader .vewperfil{
+    border-right: 1px solid #c2c2c2;
+    width:330px;
+    height: 100%;
+}
+
+.headeruserfuncionario .conteudoheader .vewperfil img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.headeruserfuncionario .conteudoheader .vewperfil p{
+    font-family: Archivo Narrow;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.headeruserfuncionario .conteudoheader .vewperfil i{
+    cursor: pointer;
+    margin-top: 2px;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.headeruserfuncionario .conteudoheader .vewperfil i:hover{
+    color: #c09829;
+}
+
+#submenuperfil{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: #fff;
+    flex-direction: column;
+    margin: 10px;
+    width: 330px;
+}
+
+#submenuperfil li{
+    font-family: Archivo Narrow;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+}
+
+#submenuperfil a{
+    font-family: Archivo Narrow;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+#submenuperfil li:hover{
+    background-color: #3d3d50;
+    color: #fff;
+}
+
+#submenuperfil li:hover > a{
+    color: #fff;
+}
+
+.exclusivefechesub{
+    cursor: pointer;
+}
+
+.iconesinformaciosservices{
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+    margin-left: 900px;
+    margin-bottom: 15px;
+}
+
+.contadorservicos{
+    position: absolute;
+    z-index: 1;
+    background-color: #5089C6;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 15%;
+    margin-top: 2px;
+    margin-left: -10px;
+    box-shadow: 0px 0px 0px 2px #fff;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.iconesinformaciosservices img{
+    width: 50px;
+    height: 50px;
+}
+
+.iconesinformaciosmsg{
+    width: 50px;
+    margin-top: -70px;
+    margin-left: 940px;
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+.iconesinformaciosmsg img{
+    width: 70px;
+    height:70px;
+}
+
+.contadormensagens{
+    position: absolute;
+    z-index: 1;
+    background-color: #b83a3a;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 15%;
+    margin-top: 7px;
+    margin-left: 35px;
+    box-shadow: 0px 0px 0px 2px #fff;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.mybuttonsuport{
+    width: 70px;
+    height: 70px;
+    margin-left: 1010px;
+    margin-top: -61px;
+}
+
+.mybuttonsuport img{
+    width: 60px;
+    height: 60px;
+}
+
+.subheaderII{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+
+.subheaderII .conteudoheaderII{
+    width: 1050px;
+    height: 100%;
+}
+
+.subheaderII .conteudoheaderII div{
+    text-align: center;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-top: -5px;
+    margin-left: 30px;
+}
+
+.subheaderII .conteudoheaderII div .paragrafosexclu{
+    padding-left: 20px;
+}
+
+.subheaderII .conteudoheaderII div img{
+    width: 80px;
+    height: 80px
+}
+
+.titleenttables{
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.titleenttables .conteudotitletables{
+  width: 1230px;
+}
+
+.titlo-morator-colaborator{
+  width: 1230px;
+  margin: 0%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #C84B31;
+  color: #fff;
+}
+.title-informaitoion-colaborator{
+  width: 1230px;
+  margin: 0%;
+  border-radius: 5px;
+  background-color: #f8b3a6;
+  color:red;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/* TRATAMENTO DOS INPUT'S DE MODAIS PRIMEIRO TRATAMENTO GERAL */
+
+.weppermodal{
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.weppermodal .conteudomodal label{
+  font-family: Archivo Narrow;
+  width: 100%;
+}
+
+
+.weppermodal .conteudomodal input{
+  border: 1px solid rgba(150, 150, 150, 0.692);
+  font-family: Montserrat;
+  border-radius: 0;
+  border-width: 1px;
+  margin-top: 2px;
+  font-size: 20px;
+  width: 100%;
+  outline: none;
+  height: 30px;
+}
+
+.weppermodal .conteudomodal input:invalid{
+  border: 1px solid rgba(119, 6, 6, 0.692);
+  background-color: rgba(119, 6, 6, 0.226);
+  transition: 1s;
+}
+.weppermodal .conteudomodal input:valid{
+  border: 1px solid rgba(6, 119, 44, 0.692);
+  background-color: rgba(6, 119, 44, 0.144);
+  transition: 1s;
+}
+/* exemplo de input geral adaptavél á paginas de cadastro de moradores */
+.page_rogister .conteudomodal{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.page_rogister .conteudomodal label{
+  font-family: Archivo Narrow;
+  width: 100%;
+}
+
+
+.page_rogister .conteudomodal input{
+  border: 1px solid rgba(150, 150, 150, 0.692);
+  font-family: Montserrat;
+  border-radius: 0;
+  border-width: 1px;
+  margin-top: 2px;
+  font-size: 20px;
+  width: 500px;
+  outline: none;
+  height: 30px;
+}
+
+.page_rogister .conteudomodal input:invalid{
+  border: 1px solid rgba(119, 6, 6, 0.692);
+  background-color: rgba(119, 6, 6, 0.226);
+  transition: 1s;
+}
+.page_rogister .conteudomodal input:valid{
+  border: 1px solid rgba(6, 119, 44, 0.692);
+  background-color: rgba(6, 119, 44, 0.144);
+  transition: 1s;
+}
+/* fim */
+.selectmodal label{
+  font-family: Archivo Narrow;
+  width: 100%;
+}
+
+.selectmodal{
+  width: 100%;
+}
+
+.selectmodal select{
+  border: 1px solid rgba(150, 150, 150, 0.692);
+  font-family: Montserrat;
+  border-radius: 0;
+  outline: none;
+  font-size: 20px;
+  height: 30px;
+  width: 100%;
+}
+
+.selectmodal select:invalid{
+  border: 1px solid rgba(119, 6, 6, 0.692);
+  background-color: rgba(119, 6, 6, 0.226);
+  transition: 1s;
+}
+.selectmodal select:valid{
+  border: 1px solid rgba(6, 119, 44, 0.692);
+  background-color: rgba(6, 119, 44, 0.144);
+  transition: 1s;
+}
+
+.conteudomodal textarea{
+  border: 1px solid rgba(150, 150, 150, 0.692);
+  font-family: Montserrat;
+  border-radius: 0;
+  outline: none;
+  font-size: 20px;
+  height: 100px;
+  width: 100%;
+}
+
+.btncadentregas{
+  text-align: center;
+  margin: 10px;
+ display: flex;
+ justify-content: center;
+}
+
+.weppermodal .btncadentregas button{
+    background-color: rgba(150, 150, 150, 0.692);
+    border-width: 0px 0px 0px 0px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+}
+
+.weppermodal .btncadentregas button:hover{
+    background-color: #ff705d;
+    color: #ffff;
+}
+.weppermodal .btncadentregas a{
+  background-color: rgba(150, 150, 150, 0.692);
+  border-width: 0px 0px 0px 0px;
+  text-decoration: none;
+  padding-top: 4px;
+  margin-right: 5px;
+  color: #000;
+  cursor: pointer;
+  font-size: 15px;
+  width: 130px;
+  height: 30px;
+}
+
+.weppermodal .btncadentregas a:hover{
+  background-color: #ff705d;
+  color: #ffff;
+}
+
+#contentempresa .sumit{
+  display: none;
+}
+
+#contentveiculo .econderiputsveiculo{
+  display: none;
+}
+
+.contfotodavisita{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.container-foto-visit{
+  cursor: pointer;
+  margin: 0%;
+  height: 200px;
+  width: 250px;
+  border-radius: 20%;
+}
+
+.container-foto-visit .wrapper-foto-visit{
+  margin: 0%;
+  position: relative;
+  height: 200px;
+  width: 250px;
+  border-radius: 20%;
+  border: 1px dashed red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper-foto-visit{
+  border: none;
+}
+
+.wrapper-foto-visit .image-foto-visit{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-foto-visit img{
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wrapper-foto-visit .icon-foto-visit{
+  font-size: 100px;
+  padding-left: 40px;
+  color: #fa9905
+}
+
+.wrapper-foto-visit .icon-foto-block{
+  font-size: 100px;
+  padding-left: 23px;
+  color: #fa9905
+}
+
+
+.wrapper-foto-visit .text-foto-visit{
+  font-size: 17px;
+  color: #fa9905
+}
+.wrapper-foto-visit.active{
+  border: none;
+}
+.wrapper-foto-visit #sair-bt-foto-visit{
+  position: absolute;
+  right: 25px;
+  top: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fa9905;
+  display: none;
+}
+
+
+
+.wrapper-foto-visit #sair-bt-foto-visit:hover{
+  color: red;
+}
+.wrapper-foto-visit .nome-aquivo-foto-visit{
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: #fff;
+  padding: 3px 0;
+  font-size: 18px;
+  background: linear-gradient(135deg, #fa9905 0%,#ff0000 100%);
+  display: none;
+}
+
+.wrapper-foto-visit.active:hover .nome-aquivo-foto-visit{
+  display: block;
+  transition: 2s;
+}
+
+#sair-bt-foto-visit{
+  margin-top: -30px;
+  margin-left: 20px;
+}
+
+/* RETIRADA DE CORRESPÔNDENCIAS E ENVINDO PARA O BANCO DE DADOS DE RETIRADA */
+
+.wapper_informa_entragas{   /*toda a pagina que nos da as informações*/
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.wapper_informa_entragas .header_informa_entregas{
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 30px;
+  width: 100%;
+  
+}
+
+.wapper_informa_entragas .content_informa_entregas .pag_informa_entregas{
+  justify-content: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  padding: 30px;
+  height: 400px;
+  display: flex;
+
+}
+
+.wapper_informa_entragas .content_informa_entregas .pag_informa_entregas p{
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  background-color: #d4d4d6;
+}
+
+.inputs_informa_entregas{
+  justify-content: center;
+  display: flex;
+  margin-top: -50px;
+  
+}
+
+
+.inputs_informa_entregas .contentinput input{
+  border: 1px solid rgba(150, 150, 150, 0.692);
+  font-family: Montserrat;
+  border-radius: 0;
+  border-width: 1px;
+  width: 500px;
+  margin: 5px;
+  font-size: 20px;
+  outline: none;
+  height: 30px;
+}
+
+
+.inputs_informa_entregas .contentinput input:invalid{
+  border: 1px solid rgba(119, 6, 6, 0.692);
+  background-color: rgba(119, 6, 6, 0.226);
+  transition: 1s;
+}
+.inputs_informa_entregas .contentinput input:valid{
+  border: 1px solid rgba(6, 119, 44, 0.692);
+  background-color: rgba(6, 119, 44, 0.144);
+  transition: 1s;
+}
+
+.button_informa_entrega{
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  
+}
+
+.button_informa_entrega input{
+  margin-right: 20px;
+}
+
+#contentequipamento .equi{
+  display: none;
+}
+
+#aumentarmodalveiculo{
+  width: 700px;
+}
+
+#aumentarmodalveiculo table{
+  width: 100%;
+}
+
+/* tratamento da pagina de cadastros aos regitros de moradores */
+
+.main_page_records{
+  width: 100%;
+  height: 100%;
+}
+
+.main_page_records .wapper_content_records{
+  justify-content: center;
+  display: flex;
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+}
+.main_page_records .wapper_content_records .content_records {
+  width: 100%;
+  height: 100%;
+}
+
+.main_page_records .wapper_content_records .content_records .header_title_record{
+  margin-left: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: Ubuntu;
+}
+
+.main_page_records .wapper_content_records .content_records .button_get_new_register{
+  background-color: #5089C6;
+  margin-left: 30px;
+  float: left;
+  height: 30px;
+  width: 155px;
+  
+}
+
+.main_page_records .wapper_content_records .content_records .button_get_new_register a{
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+}
+
+.main_page_records .wapper_content_records .content_records .button_get_new_register:hover{
+  background-color: #4772a0;
+}
+/* ================================================================================================= */
+.main_page_records .wapper_content_records .content_records .button_get_form{
+  background-color: #1d8545;
+  margin-left: 30px;
+  height: 30px;
+  float: left;
+  width: 130px;
+  
+}
+
+.main_page_records .wapper_content_records .content_records .button_get_form a{
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+}
+
+.main_page_records .wapper_content_records .content_records .button_get_form:hover{
+  background-color: #22944e;
+}
+
+
+.get_table_records{
+  height: 490px;
+  overflow-y: auto;
+  font-family: ubuntu;
+  font-size: 15px;
+  width: 100%;
+}
+
+.get_table_records td{
+  font-family: ubuntu;
+  font-size: 17px;
+}
+
+.more_button{
+  background-color: #168665;
+}
+
+.more_button a{
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+
+.more_button:hover > a{
+  color: rgb(185, 175, 175);
+}
+
+#formmoradorsenha{
+  width: 300px;
+}
+
+.oneicon{
+  border-width: 0px 0px 0px 0px;
+  background-color: 0%;
+  margin-left: 10px;
+  margin-top: -15px;
+  margin-bottom: -10px;
+  color: #168665;
+  font-size: 27px;
+  padding: 0;
+  width: 0px;
+}
+
+.oneicon:hover{
+  color: #23232e;
+}
+
+#viewone{
+  display: none;
+  padding-left: 2px;
+}
+
+#viewduo{
+  padding: 0;
+}
+
+.econderiputsdeficiente{
+  display: none;
+}
+
+/* Tratamento da pagina de editar cadastro do morador */
+
+#paiselect div{
+  display: none;
+}
+
+.page_edit_register_resident{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident{
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .content_edit_register_resident{
+  width: 100%;
+  height: 100%;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .header_edit_register_resident p{
+  margin-left: 15px;
+  font-family: ubuntu;
+  font-size: 25px;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .button_voltar_home{
+  background-color: #b83a3a;
+  margin-left: 15px;
+  text-align: center;
+  font-size: 18px;
+  width: 120px;
+}
+.page_edit_register_resident .wepper_edit_register_resident .button_voltar_home a{
+  text-decoration: none;
+  font-family: ubuntu;
+  outline: none;
+  color: #fff;
+  width: 120px;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .button_voltar_home:hover{
+  background-color: #ca4646;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .button_voltar_home a:hover{
+  color: #3d3d50;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident{
+  padding: 10px;
+  max-width: 800px;
+  float: left;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident label{
+  font-family: Archivo Narrow;
+  margin-left: 5px;
+  width: 100%;
+}
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident div{
+  float: left;
+  margin-bottom: 0;
+  width: 150px;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident input{
+  border: 1px solid rgba(150, 150, 150, 0.692);
+  font-family: Montserrat;
+  border-radius: 0;
+  border-width: 1px;
+  width: 500px;
+  margin: 5px;
+  font-size: 20px;
+  outline: none;
+  height: 30px;
+}
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident .max_input{
+  width: 760px;
+}
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident .max_input input{
+  width: 760px;
+}
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident #responsavel{
+  width: 300px;
+}
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident #responsavel input{
+  width: 295px;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident .min_input{
+  margin-right: 10px;
+  width: 145px;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident .min_input input, select{
+  width: 140px;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident input:invalid{
+  border: 1px solid rgba(119, 6, 6, 0.692);
+  background-color: rgba(119, 6, 6, 0.226);
+  transition: 1s;
+}
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident input:valid{
+  border: 1px solid rgba(6, 119, 44, 0.692);
+  background-color: rgba(6, 119, 44, 0.144);
+  transition: 1s;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident select{
+  border: 1px solid rgba(150, 150, 150, 0.692);
+  font-family: Montserrat;
+  margin-top: 5px;
+  border-radius: 0;
+  outline: none;
+  font-size: 20px;
+  height: 30px;
+  width: 150px;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident select:invalid{
+  border: 1px solid rgba(119, 6, 6, 0.692);
+  background-color: rgba(119, 6, 6, 0.226);
+  transition: 1s;
+}
+.page_edit_register_resident .wepper_edit_register_resident .dice_register_resident select:valid{
+  border: 1px solid rgba(6, 119, 44, 0.692);
+  background-color: rgba(6, 119, 44, 0.144);
+  transition: 1s;
+}
+
+.page_edit_register_resident .wepper_edit_register_resident .photo_register{
+  border: 1px solid rgba(6, 119, 44, 0.692);
+  background-color: #ecf1f0;
+  float: left;
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 330px;
+  height: 285px;
+  padding: 2px;
+}
+.page_edit_register_resident .wepper_edit_register_resident .photo_register img{
+  width: 100%;
+  height: 279px;
+}
+
+.button_edit_register{
+  justify-content: center;
+  margin-left: 500px;
+  display: flex;
+  float: left;
+}
+.button_photo_register{
+  justify-content: center;
+  display: flex;
+  float: left;
+}
+.button_edit_register div button{
+  float: left;
+  margin-right: 20px;
+}
+
+/*EFEITO DE HOVER INTERMEDIÁRIO*/
+
+.button-inter{
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  margin: 0;
+  padding: 3px;
+
+  font-family: 'Inter';
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 300;
+
+  color: #000;
+  border: 1px solid rgb(6, 119, 44, 0.692);
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: .5s;
+}
+
+/* First intermediário - Button 3*/
+.item9{
+  position: relative;
+  overflow: hidden;
+
+  transition: .2s;
+}
+
+.item9:hover{
+  color: #eee;
+  background: rgb(5, 177, 62);
+  box-shadow: 0 0 5px rgb(6, 119, 44, 0.692), 0 0 5px rgb(6, 119, 44, 0.692), 0 0 5px rgb(6, 119, 44, 0.692);  
+
+  transition-delay: 1s;
+}
+
+.item9 span{
+  position: absolute;
+  display: block;
+}
+
+.item9 span:nth-child(1){
+  width: 100%;
+  height: 2px;
+
+  top: 0;
+  left: -100%;
+
+  background: linear-gradient(88.89deg, transparent, rgba(5, 177, 62));
+}
+
+.item9:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+
+.item9 span:nth-child(2){
+  width: 2px;
+  height: 100%;
+
+  right: 0;
+  top: -100%;
+
+  background: linear-gradient(181.44deg, transparent, rgba(17, 233, 89, 0.911));
+}
+
+.item9:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: .25s;
+}
+
+.item9 span:nth-child(3){
+  width: 100%;
+  height: 2px;
+
+  bottom: 0;
+  right: -100%;
+
+  background: linear-gradient(269.44deg, transparent, rgba(17, 233, 89, 0.911));
+}
+
+.item9:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: .5s;
+}
+
+.item9 span:nth-child(4){
+  width: 2px;
+  height: 100%;
+
+  left: 0;
+  bottom: -100%;
+
+  background: linear-gradient(359.88deg, transparent, rgba(17, 233, 89, 0.911));
+}
+
+.item9:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: .75s;
+}
+.weppermodal_edit_photo{
+  display: flex;
+  justify-content: center;
+}
+
+/* ====================================================================================================================================================
+   
+    DESTA PARTE A DIANTE VAMOS INICIAR A FORMATAÇÃO DA PAGINA DE FINALIZAÇÃO DE VISITÂNTES ONDE O FUNCIONÁRIO VAI PODER FINALIZAR A SAÍDA DE
+    UMA VISITA DENTRO DO CONDOMÍNIO.
+
+==================================================================================================================================================== */
+.wapper_information_deliver{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.conteiner_information_deliver .titulando_page_retirada_entrega{
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+.titulosfinalizarsaidadevisitas div{
+  margin-bottom: 13.7px;
+  
+}
+
+.titulosfinalizarsaidadevisitas{
+  width: 250px;
+  font-size: Encode Sans SC;
+}
+
+.resultdosubtitle{
+  font-size: Encode Sans SC;
+  width: 250px;
+  margin-left: 250px;
+  margin-top: -430px;
+}
+
+.resultdosubtitle div{  
+  margin-bottom: 11.5px;
+  
+}
+
+.resultdosubtitle input{
+  width: 250px;
+  outline: none;
+}
+
+.resultdosubtitle input:invalid{
+  border: red solid 1px ;
+  box-shadow: 0px 0px 1px red;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.resultdosubtitle input:valid{
+  border: rgb(33, 133, 63) solid 1px ;
+  box-shadow: 0px 0px 1px rgb(33, 133, 63);
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.resultdosubtitle select{
+  border-radius: 5px;
+  height: 30px;
+  box-shadow: 0px 0px 1px rgb(33, 133, 63);
+  border: rgb(33, 133, 63) solid 1px ;
+  outline: none;
+}
+
+.resultdosubtitle select:valid{
+  box-shadow: 0px 0px 1px rgb(33, 133, 63);
+  border: rgb(33, 133, 63) solid 1px ;
+}
+
+.resultdosubtitle select:invalid{
+  box-shadow: 0px 0px 1px rgb(153, 36, 0);
+  border: rgb(153, 36, 0) solid 1px ;
+
+}
+.resultdosubtitle select:hover{
+  border: rgb(133, 126, 33) solid 1px ;
+  box-shadow: 0px 0px 3px rgb(133, 40, 33);
+}
+
+#paraprestador{
+  margin-top: 30px;
+
+}
+
+#text_area_pagevisit{
+  width: 500px;
+  outline: none;
+  border: rgb(33, 133, 63) solid 1px ;
+  box-shadow: 0px 0px 2px rgb(33, 133, 63);
+  border-radius: 5px;
+  transition: 1s;
+}
+.selecnomedormora{
+  width: 250px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.selecnomedormora:invalid{
+  border: red solid 1px ;
+  box-shadow: 0px 0px 2px red;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.selecnomedormora:valid{
+  border: rgb(33, 133, 63) solid 1px ;
+  box-shadow: 0px 0px 1px rgb(33, 133, 63);
+  border-radius: 5px;
+  transition: 1s;
+}
+
+
+#paraprestador input{
+  width: 500px;
+  outline: none;
+}
+#paraprestador input:valid{
+  border: rgb(33, 133, 63) solid 1px ;
+  box-shadow: 0px 0px 2px rgb(33, 133, 63);
+  border-radius: 5px;
+  transition: 1s;
+}
+.titulosfinalizarsaidadevisitasresultados{
+  margin-left: 400px;
+  margin-top: -490px;
+}
+
+
+.imag_result_visitantes {
+  margin-top: -450px;
+  margin-left: 550px;
+  width: 300px;
+  height: 300px;
+}
+
+.btnpagesairconfvisi{
+  width: 100px;
+  margin-left: 770px;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.btnsaidaconf{
+  width: 200px;
+  margin-left: 550px;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 0;
+}
+
+/* tratamento da página de listagem de entrada e saída de visitantes */
+
+.wapper_history_recorded{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+}
+
+.wapper_history_recorded .content_history_recorded{
+  padding: 5px;
+}
+
+.content_history_recorded .header_history_recorded{
+  font-size: 25px;
+  font-family: Ubuntu;
+}
+
+/* PAGINA PRINCIPAL DE LOGIN  */
+#mainpagelogin{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: auto;
+}
+
+#mainpagelogin .headerprimarypagelogin{
+  padding-bottom: 15px;
+  background-color: #fff;
+  margin: -20px -25px 10px;
+  border-radius: 1px 1px 0 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.347);
+  width: 500px;
+  height: 300px;
+  margin-top: 150px;
+}
+#mainpagelogin .headerprimarypagelogin .titlepagelogin{
+  background: linear-gradient(40deg, #7a1d18, #ff0505) !important;
+  font-family: Roboto Condensed;
+  font-size: 30px;
+  color: #fff;
+  padding-top: auto;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+}
+#mainpagelogin .headerprimarypagelogin .inputpagelogin label{
+  font-family: Dongle;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+#mainpagelogin .headerprimarypagelogin .inputpagelogin{
+  width: 400px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+#pai{
+  width: 100%; 
+  
+}
+
+#selecttypeimprassao{
+  width: 300px;
+  float: left;
+}
+
+.printselect{
+  width: 130px;
+  margin-left: 330px;
+}
+
+.printselect button{
+  border-width: 0px 0px 0px 0px;
+  background-color: #962D2D;
+  color: #fff;
+  padding: 3px;
+  outline: none;
+  font-size: 20px;
+  width: 130px;
+}
+
+.printselect button:hover{
+  background-color: #ceb8b8;
+  color: #962D2D;
+}
+
+.printselectmes{
+  width: 130px;
+  margin-left: 330px;
+}
+
+.printselectmes button{
+  border-width: 0px 0px 0px 0px;
+  background-color: #095e5e;
+  color: #fff;
+  padding: 3px;
+  outline: none;
+  font-size: 20px;
+  width: 130px;
+}
+
+.printselectmes button:hover{
+  background-color: #ceb8b8;
+  color: #095e5e;
+}
+
+.printselecttipo{
+  width: 130px;
+  margin-left: 330px;
+}
+
+.printselecttipo button{
+  border-width: 0px 0px 0px 0px;
+  background-color: #247046;
+  color: #fff;
+  padding: 3px;
+  outline: none;
+  font-size: 20px;
+  width: 130px;
+}
+
+.printselecttipo button:hover{
+  background-color: #ceb8b8;
+  color: #247046;
+}
+
+.buttonebiarmeil{
+  width: 130px;
+  margin-left: 330px;
+  margin-top: -34px;
+}
+
+.buttonebiarmeil button{
+  border-width: 0px 0px 0px 0px;
+  background-color: #6b1960;
+  color: #fff;
+  padding: 3px;
+  outline: none;
+  font-size: 20px;
+  width: 130px;
+}
+
+.buttonebiarmeil button:hover{
+  background-color: #e9dcdc;
+  color: #6b1960;
+}
+
+
+
+#historic{
+  width: 300px;
+}
+
+#pai .sumit{
+  display: none;
+}
+
+#Geral{
+  float: left;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#Geral label{
+  margin-top: 20px;
+}
+
+/* TELA DE LOGIN */
+
+.buttonpagelogin{
+  justify-content: center;
+  margin-top: 10px;
+  display: flex;
+}
+
+.buttonpagelogin button{
+  font-family: Arial, Helvetica, sans-serif;
+  border-width: 0px 0px 0px 0px;
+  background-color: #7a1d18;
+  transition: 2s;
+  text-align: center;
+  color: #fff;
+  width: 300px;
+  height: 35px;
+  padding: 0;
+}
+
+.buttonpagelogin button:hover{
+  background: linear-gradient(40deg, #7a1d18, #ff0505) !important;
+  color:  #fff;
+}
+
+.senhauserinvalid{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(146, 11, 11);
+}

@@ -1,0 +1,261 @@
+body, html{
+    background-color: #fcfbfa;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: left;
+}
+:root{
+    --cor-sinza-claro: rgba(180, 174, 174, 0.911);
+    --cor-vermelho-tranpar: #f05945d3;
+    --cor-sinza-escuro: rgba(231, 224, 224, 0.774);
+    --borda-arredon: 5px;
+
+}
+
+#osdados{
+    width: 500px;
+    height: 400px;
+    margin-left: -915px;
+    display: block;
+    overflow-y: auto;
+    border: solid 0px;
+    cursor: pointer;
+}
+
+#osdados input{
+    width: 450px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: none;
+    background-color: var(--cor-sinza-escuro);
+    border-radius: var(--borda-arredon);
+    font-size: 15px;
+    text-align: center;
+    color: black;
+
+}
+
+.osparagrafos{
+    margin: 0%;
+    border: 0px;
+    padding: 0%;
+    color: rgb(158, 154, 154);
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#osdados::-webkit-scrollbar{
+    width: 2px;
+    
+}
+
+#osdados::-webkit-scrollbar-thumb{
+    background-color: var(--cor-vermelho-tranpar);
+    border-radius: 5px; 
+}
+
+#osdados::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(250, 125, 36);
+}
+
+#imag-rolagem{
+    margin: 0%;
+    margin-left: -400px;
+    margin-top: -350px;
+
+}
+
+#infor_rolagem{
+    width: 20px;
+    height: 30px;
+    color: var(--cor-sinza-claro);
+}
+
+.botao-edit{
+    margin-left: -200px;
+    margin-top: 200px;
+}
+
+#mostra_fot_edtr{
+    margin: 0%;
+    margin-left: -360px;
+    margin-top: -50px;
+    width: 330px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#mostra_fot_edtr img{
+    width: 330px;
+    height: 250px;
+    border-radius: 10px;
+    border: solid 1px  #d41e1e91;
+}
+
+.apresentanome{
+    margin: 0%;
+    margin-top: -20px;
+    width: 325px;
+    height: 25px;
+    margin-left: -360px;
+    background: linear-gradient(135deg, #941919 0%,#ff0000 100%);
+    color: black;
+    border-radius: 30px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.teleemergence{
+    margin: 0%;
+    width: 180px;
+    margin-left: -360px;
+    height: 25px;
+    background: linear-gradient(135deg, #941919 0%,#ff0000 100%);
+    color: black;
+    border-radius: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#btnn{
+    margin: 0%;
+    margin-top: 10px;
+}
+/*
+VAMOS DAR INICIO A FORMATÇÃO DA PAGINA DE VISITANTES
+
+*/
+.placa-car{
+    margin: 0%;
+    margin-top: -5px;
+    border: solid 2px rgb(46, 45, 45);
+    width: 70px;
+    height: 25px;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.carro{
+    font-size: 20px;
+    margin: 0%;
+    margin-top: -30px;
+    padding: 3px;
+}
+
+.incluirdados{
+    margin: 0%;
+    padding: 2px;
+    width: 430px;
+    height: 25px;
+    background-color: #dd2f2f;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.moradormorador{
+    width: 422px;
+    margin-top: 35px;
+    border: 1px solid rgb(180, 81, 81);
+}
+
+.moradorvisita{
+    width: 422px;
+    margin-top: 35px;
+    border: 1px solid rgb(180, 81, 81);
+}
+
+#Liberar{
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #941919 0%,#ff0000 100%);
+    margin-left: 10px;
+}
+
+.title-registro{
+    margin: 0%;
+    width: 550px;
+    font-family: Staatliches;
+    color: rgb(97, 97, 97);
+    margin-left: 480px;
+    margin-top: 20px;
+}
+
+#cont-input input{
+    outline: none;
+}
+
+#cont-input input:invalid{
+    border-color: #ff0000;
+}
+
+#cont-input input:valid{
+    border-color: #53ac00;
+    
+}
+
+.btnbus-vi{
+    margin-top: -5px;
+    border: 0px;
+    font-size: 30px;
+    background: #fcfbfa;
+
+}
+
+.buscando:hover{
+    color: #53ac00;
+    cursor: pointer;
+}
+
+#campo{
+    margin: 0%;
+    width: 400px;
+    height: 25px;
+    font-size: 20px;
+    
+}
+
+
+.ap-visita{
+outline: none;
+
+}
+
+.incluirdadosvisitador{
+    margin: 0%;
+    padding: 2px;
+    width: 430px;
+    height: 25px;
+    background-color: #e74c4c2a;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.incluirdadosvisitador:hover{
+    background-color: #dd2f2f;
+    cursor: pointer;
+}

@@ -1,0 +1,77 @@
+* {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 800px){
+    *{
+        display: block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .conteiner{
+        max-width: 360px;
+        
+    }
+
+    .conteiner p{
+        width: 250px;
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .conteiner input{
+        width: 250px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .imagem_do_morador{
+        margin-left: 100px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .paragrefo_confirm{
+        font-size: 20px;
+    }
+
+    .esconder_input{
+        display: none;
+    }
+
+    .btn_atualizar_dados{
+        margin-left: 120px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 30px;
+    }
+
+    .btn_atualizar_foto{
+        margin-left: 125px;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 30px;
+    }
+
+    #form_atualizar_foto{
+        display: none;
+    }
+
+    h4{
+        margin-bottom: -0.5px;
+        margin-top: -2px;
+        margin-left: 50px;
+    }
+
+    .dados_editaveis{
+        text-align: center;
+    }
+
+    
+}

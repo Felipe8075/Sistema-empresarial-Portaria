@@ -1,0 +1,322 @@
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar{
+  width: 1px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #962D2D;
+  border-radius: 0px; 
+}
+
+.row::-webkit-scrollbar{
+    width: 2px;
+}
+
+.row::-webkit-scrollbar-thumb{
+    background-color: #962D2D;
+    border-radius: 5px; 
+}
+
+.conteinertables .headertitlestables{
+    font-family: Oxygen;
+    text-align: center;
+    width: 100%;
+}
+
+/* Barra de busca completa pronta */
+.contentcampbuscar{
+    margin: 20px ;
+    display: flex;
+}
+
+.contentcampbuscar label{
+    font-family: Oxygen;
+}
+
+.contentcampbuscar input[type="text"]{
+    border: 1px solid rgba(150, 150, 150, 0.692);
+    margin-top: 2px;
+    font-size: 15px;
+    width: 440px;
+    outline: none;
+    height: 30px;
+}
+
+.contentcampbuscar input[type="text"]:valid{
+    background-color: rgba(238, 235, 235, 0.493);
+    border: 1px solid #ff705d;
+    transition: 1s;
+}
+
+.contentcampbuscar button{
+    background-color: rgba(150, 150, 150, 0.692);
+    border-width: 0px 0px 0px 0px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+}
+
+.contentcampbuscar button:hover{
+    background-color: #ff705d;
+    color: #ffff;
+}
+/* fim */
+
+
+/* tratamento de tabelas em geral */
+
+.headertables{
+    background-color: #dc3545;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Oxygen;
+    height: 30px;
+}
+.headertables div{
+    width: 250px;
+    color: #ffff;
+    float: left;
+}
+
+.headertables #nome{
+    text-align: center;
+}
+.headertables #telefone{
+    padding-left: 100px;
+}
+
+.cardtables{
+    height: 460px;
+    overflow-y: auto;
+}
+.tablelasgeral{
+    text-align: center;
+    width: 100%;
+}
+
+.tablelasgeral tr th{
+    padding: 5px;
+    font-family: Ubuntu;
+    text-align: center;
+    background-color: #dc3545;
+    color: #ffff;
+}
+
+.tablelasgeral td{
+    font-family: Ubuntu;
+    width: 200px;
+}
+
+.buttonhomer{
+    margin-top: 24px;
+   margin-left: 20px;
+}
+
+.fotografia img{
+  width: 80px;
+  height: 80px;
+}
+
+
+
+/*TABELA PAGINA HOME*/
+.centar-table{
+    overflow-y: auto;
+    width: 1230px;
+    height: 400px;
+  }
+  
+  .table{
+    text-align: center;
+  }
+  
+  td {
+    font-size: 18px;
+    text-indent: initial;
+  }
+  
+  .contacadastrodemoradores{
+    width: 250px;
+    margin-left: 1000px;
+    margin-top: 10px;
+  }
+  
+  /*FOTO DO MORADOR DENTRO DA TABELA*/
+  
+  #img_mor{
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+  
+  .arredondandofotoindex{
+    border-radius: 50%;
+  }
+  
+  .arredondandofotoindextaga{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+  }
+  .btn-mais{
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    padding-left: 18px;
+  
+  }
+  
+  .tb-nomemor-home{
+    width: 230px;
+    height: 40px;
+    padding-top: 22px;
+    padding-left: 18px;
+  }
+  .tb-fone-home{
+    width: 145px;
+    height: 40px;
+    padding-top: 22px;
+    padding-left: 18px;
+  }
+  
+  .icon-btn-mais{
+    font-size: 40px;
+  }
+  
+  /*BARRA DE BUSCA PAGINA HOME*/
+  
+  .mb-3{
+    margin: 0%;
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    margin-left: 150px;
+  }
+  
+  #button-addon2{
+    margin-left: 20px;
+    width: 300px;
+  }
+  
+  .lupa-busca-home{
+    font-size: 18px;
+    padding: 0%;
+  }
+  
+  .formulari-busca-home{
+    display: flex;
+    width: 600px;
+  
+  }
+  
+  .tablegeralmoradore{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tablegeralmoradore .conteudotablesgeral{
+    width: 1230px;
+    margin-top: 20px;
+  }
+
+  .btn-mais{
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    padding-left: 18px;
+ 
+}
+
+.icon-btn-mais{
+    font-size: 40px;
+}
+
+
+/* Tratamento da tabela de entregas pendentes no modal */
+
+.table_entregas{
+  margin: 5px;
+  width:1000px;
+  
+}
+.table_entregas td{
+  font-family: Ubuntu;
+  padding: 5px;
+  padding-right: 5px;
+  border-bottom: 1px solid #b2b5b9;
+}
+
+.table_entregas th{
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 13px;
+}
+
+#ajustemodalcenter{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#aumetarmodal{
+  background-color: #fff;
+  width: 1200px;
+}
+
+.dimtd{
+  font-size: 15px;
+}
+
+
+/* página com lista de correspondência */
+.headertablescorresp{
+  background-color: #dc3545;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: Oxygen;
+  height: 30px;
+}
+.headertablescorresp div{
+  color: #ffff;
+  float: left;
+}
+
+.headertablescorresp .apartamento{
+  margin-left: 15px;
+}
+
+.headertablescorresp .corpak{
+  margin-left: 40px;
+}
+.headertablescorresp .fornecedorpak{
+  margin-left: 70px;
+}
+.headertablescorresp .tipopak{
+  margin-left:55px;
+}
+.headertablescorresp .descricaopak{
+  margin-left: 80px;
+}
+.headertablescorresp .entradapak{
+  margin-left: 75px;
+}
+.headertablescorresp .recebedorpak{
+  margin-left: 90px;
+}
+.headertablescorresp .saidapak{
+  margin-left: 40px;
+}
+.headertablescorresp .entregadorpak{
+  margin-left: 60px;
+}
+.headertablescorresp .retiradorpak{
+  margin-left: 35px;
+}

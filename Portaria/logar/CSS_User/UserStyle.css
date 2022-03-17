@@ -1,0 +1,175 @@
+.minha_body{
+    background-color: rgb(20, 8, 37);
+}
+
+.image_logo img{
+    width: 600px;  
+    height: 600px;
+    opacity: 0.9;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+
+}
+.image_logo{
+    width: 140px;  
+    height: 150px;
+    margin-left: 350px;
+    color: #fff;
+}
+
+.image_logo .title{
+    float: left;
+}
+
+.image_logo .ApplicationsWeb{
+    font-family: Poiret One;
+    font-size: 30px;
+    margin-left: 405px;
+    margin-top: 90px;
+    opacity: 0.70;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.image_logo .Developing{
+    font-size: 70px;
+    font-family: Gugi;
+    margin-left: 30px;
+    margin-top: 40px;
+    opacity: 0.90;
+    position: absolute;
+    z-index: 1;
+}
+
+.image_logo .Login{
+    margin-left: -380px;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 150px;
+    font-family: Gugi;
+    position: absolute;
+    z-index: 1;
+}
+
+.input_login{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.input_login input{
+    margin-left: -40px;
+    width: 450px;
+    height: 40px;
+    outline: none;
+    border-width:  0px 0px 0px 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Comfortaa;
+    opacity: 0.70;
+}
+
+.input_login input:hover{
+    transition: 1s;
+    opacity: 9;
+}
+.input_login input:invalid{
+    transition: 1s;
+    border-left: 10px solid rgb(126, 3, 3);
+}
+.input_login input:valid{
+    transition: 1s;
+    border-left: 10px solid rgb(3, 126, 40);
+    border-top: 1.5px solid rgb(3, 126, 40);
+    border-right: 1.5px solid rgb(3, 126, 40);
+    border-bottom: 1.5px solid rgb(3, 126, 40);
+    opacity: 9;
+}
+
+.input_senha{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.input_senha input{
+    margin-left: -40px;
+    width: 450px;
+    height: 40px;
+    outline: none;
+    border-width:  0px 0px 0px 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Comfortaa;
+    opacity: 0.70;
+}
+
+.input_senha input:hover{
+    transition: 1s;
+    opacity: 9;
+}
+
+.input_senha input:invalid{
+    transition: 1s;
+    border-left: 10px solid rgb(126, 3, 3);
+}
+.input_senha input:valid{
+    transition: 1s;
+    border-left: 10px solid rgb(3, 126, 40);
+    border-top: 1.5px solid rgb(3, 126, 40);
+    border-right: 1.5px solid rgb(3, 126, 40);
+    border-bottom: 1.5px solid rgb(3, 126, 40);
+    opacity: 9;
+}
+
+.buttom_login{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin-left: -40px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.buttom_login input{
+    border-width:  0px 0px 0px 0px;
+    border-radius: 10px;
+    font-family: Gugi;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    opacity: 0.80;
+    background:linear-gradient(120deg, #0F52BA, rgb(43, 133, 70),  #194d04);
+}
+.buttom_login input:hover{
+    transition: 0.1s;
+    opacity: 0.9;
+    font-size: 22px;
+    background:linear-gradient(120deg, #0F52BA, rgb(43, 133, 84),  #044d0e);
+}
+
+
+.senhauserinvalid{
+    position: relative;
+    z-index: 2;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: -40px;
+    color: rgb(230, 218, 218);
+    background-color: #e26868;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    height: 40px;
+    font-size: 18px;
+    padding-top: 5px;
+    margin-left: 500px;
+}

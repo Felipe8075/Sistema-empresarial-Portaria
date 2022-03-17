@@ -1,0 +1,495 @@
+body, html{
+    background-color: #fcfbfa;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: block;
+    justify-content: left;
+}
+
+body::-webkit-scrollbar{
+    width: 2px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #f05945;
+    border-radius: 5px;
+    
+}
+
+
+.hide{
+    display: none;
+}
+#form-solicitar{
+    display: none;
+}
+
+/*
+FORMATAÇÃO DA PAGINA DE REGISTRO DE AUTORIZAÇÕEOS 
+*/
+.title-registro{
+    margin: 0%;
+    max-width: 100%;
+    height: 80px;
+    background-color: #d5dbb3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*
+DANDO INICIO A FORMATAÇÃO DE TUDO QUE ESTA DENTRO DO FORMULÁRIO DE MUDANÇAS
+*/
+
+/*
+FONRMATANDO OS BOTÕES DA PAGINA DE REGISTROS
+*/
+
+.collapse .alert-light{
+    font-size: 20px;
+    margin: 0%;
+    padding: 0%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.btn-outline-warning{
+    margin: 10px;
+
+}
+.btn-mudança{
+    margin: 0%;
+    margin-top: -10px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+.btn-mudança #btn-mudança{
+    margin-left: -5px;
+}
+
+.btn-mudança #btn-mudança:hover{
+    color: rgba(128, 0, 0, 0.842);
+    cursor: pointer;
+}
+
+.btn-festa-salao{
+    margin: 0%;
+    margin-top: -10px;
+    width: 60px;
+    height: 50px;
+    font-size: 40px;
+    border-right: 1px solid black;
+
+}
+
+.btn-festa-salao #btn-festa{
+    margin-left: 10px;
+}
+
+.btn-festa-salao #btn-festa:hover{
+    color: rgba(128, 0, 0, 0.842);
+    cursor: pointer;
+}
+
+.btn-carrosdocondominio{
+    margin: 0%;
+    margin-top: -10px;
+    width: 60px;
+    height: 50px;
+    font-size: 40px;
+    border-right: 1px solid black;
+}
+
+.btn-carrosdocondominio #btn-carrosdocondominio{
+    margin-left: 8px;
+}
+
+.btn-carrosdocondominio #btn-carrosdocondominio:hover{
+    color: rgba(128, 0, 0, 0.842);
+    cursor: pointer;
+}
+
+.btn-patsdocondominio{
+    margin: 0%;
+    margin-top: -10px;
+    width: 60px;
+    height: 50px;
+    font-size: 40px;
+    border-right: 1px solid black;
+}
+
+.btn-patsdocondominio #btn_petsdocondominio{
+    margin-left: 8px;
+}
+
+.btn-patsdocondominio #btn_petsdocondominio:hover{
+    color: rgba(128, 0, 0, 0.842);
+    cursor: pointer;
+}
+
+.btn_funcoinarios_demoradores{
+    margin: 0%;
+    margin-top: -10px;
+    width: 60px;
+    height: 50px;
+    font-size: 40px;
+    border-right: 1px solid black;
+}
+.btn_funcoinarios_demoradores #btn_funcoinarios_demoradores{
+    margin-left: 7px;
+}
+
+.btn_funcoinarios_demoradores #btn_funcoinarios_demoradores:hover{
+    color: rgba(128, 0, 0, 0.842);
+    cursor: pointer
+}
+
+#btn_lavarappido{
+    margin: 0%;
+    width: 60px;
+    height: 50px;
+}
+#btn_lavarappido {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+#btn_lavarappido:hover{
+    color: rgba(128, 0, 0, 0.842);
+    cursor: pointer
+}
+
+.btn_ocorrencias{
+    margin: 0%;
+    margin-top: -10px;
+    width: 60px;
+    height: 50px;
+    
+    border-right: 1px solid black;
+}
+.btn_ocorrencias #material-icons{
+    margin-left: 7px;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.btn_ocorrencias #material-icons:hover{
+    color: rgba(128, 0, 0, 0.842);
+    cursor: pointer
+}
+/*
+1° INPUTS 
+*/
+.conteiner-input1{
+    float: left;
+
+}
+
+
+#selecttype{
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    outline: none;
+}
+
+#selecttype:hover{
+    border-color: rgb(12, 12, 136);
+    cursor: pointer;
+}
+.input-mudanças{
+    float: left;
+    margin: 0%;
+    position: relative;
+    margin: 30px 0;
+    margin-right: 20px;
+
+}
+
+.input-mudanças .input:focus + .label,
+.input-mudanças .input.not-empty + .label{
+    transform: translateY(-24px);
+}
+
+.input-mudanças .input{
+    margin: 0%;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-width: 0 0 2px 0;
+    border-color: #ccc;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400px;
+    outline: none;
+}
+
+.input-mudanças .input:invalid{
+    border-width: 0 0 2px 0;
+    border-color: rgb(150, 33, 33);
+}
+
+.input-mudanças .input:valid{
+    border-width: 0 0 2px 0;
+    border-color: rgb(19, 190, 110);
+}
+
+.input-mudanças .input-nomemorador:focus + .label,
+.input-mudanças .input-nomemorador.not-empty + .label{
+    transform: translateY(-24px);
+}
+
+
+.input-mudanças .input-nomemorador{
+    margin: 0%;
+    display: block;
+    width: 400px;
+    height: 40px;
+    border-width: 0 0 2px 0;
+    border-color: #ccc;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400px;
+    outline: none;
+}
+.input-mudanças .input-nomemorador:invalid{
+    border-width: 0 0 2px 0;
+    border-color: rgb(150, 33, 33);
+}
+
+.input-mudanças .input-nomemorador:valid{
+    border-width: 0 0 2px 0;
+    border-color: rgb(19, 190, 110);
+}
+
+.input-mudanças .label{
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(102, 101, 101);
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+}
+/*ALERTA DE AJUDA*/
+.alert{
+    text-align: center;
+    font-size: 15px;
+}
+
+/*
+FORMATANDO AS TABELAS
+*/
+
+/*
+TABELA 1° - REGISTRO DE SOLICITAÇÕES DE MUDANÇAS
+*/
+
+.tabela-overflow{
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.tabela-overflow::-webkit-scrollbar{
+    width: 2px;
+}
+.tabela-overflow::-webkit-scrollbar-thumb{
+    background-color: #f05945;
+    border-radius: 5px;
+    
+}
+
+
+.align-items-center div{
+    margin-left: 0px;
+    width: 1000px;
+}
+
+.align-items-center a{
+    float: right;
+}
+/*CAMPO DE BUSCA*/
+
+.mb-3{
+    width: 500px;
+    border-radius: 5px;
+}
+
+.form-control{
+    margin-right: 10px;
+}
+
+.tabela-overflow .btnfomulario{
+    width: 70px;
+    height: 40px;
+}
+.tabela-overflow .imag-gif{
+    width: 70px;
+    height: 40px;
+}
+
+
+/*
+INICIANDO A FORMATAÇÃO DA PAGINA DE EVENTOS
+*/
+
+.collapse{
+    width: 100%;
+}
+.calender-eventos h2{
+    margin: 0%;
+    width: 200px;
+    margin-top: 33px;
+}
+.card-body .calender-eventos img{
+    width: 70px;
+    height: 70px;
+    margin: 0%;
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+}
+/*
+BOTÃO DE SOLICITAÇÃO DE UM NOVO EVENTO
+*/
+#btn-novo-evento{
+    margin: 0%;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    color: #ffff;
+    background-color: rgb(84, 84, 156);
+    border: 0px;
+    border-radius: 5px;
+}
+
+.btn-novo-evento{
+    width: 200px;
+    height: 40px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    margin-left: 1000px;
+}
+
+
+#btn-novo-evento:hover{
+    background-color: rgb(66, 66, 129);
+    cursor: pointer;
+    transition: 0.50s;
+}
+
+/*
+SELECT'S
+*/
+
+#selecttypeevento{
+    float: left;
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+}
+
+#selecttypeevento:valid{
+    border-left: 7px solid rgb(66, 66, 129);
+}
+
+#seleclocaolevento{
+    float: left;
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+}
+
+#seleclocaolevento:valid{
+    border-left: 7px solid rgb(66, 66, 129);
+}
+
+.input-eventos .input-evet{
+    margin: 0%;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px 1px 1px ;
+    border-color: #ccc;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400px;
+    outline: none;
+}
+
+.input-eventos .input-evet:invalid{
+    border-left: 7px solid rgb(150, 33, 33);
+    transition: 1s;
+}
+
+.input-eventos .input-evet:valid{
+    border-left: 7px solid rgb(19, 190, 110);
+    transition: 1s;
+}
+
+
+.input-eventos .input-evet-hora{
+    margin: 0%;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 85px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px 1px 1px ;
+    border-color: #ccc;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400px;
+    outline: none;
+}
+
+.input-eventos .input-evet-hora:invalid{
+    border-left: 7px solid rgb(150, 33, 33);
+    transition: 1s;
+}
+
+.input-eventos .input-evet-hora:valid{
+    border-left: 7px solid rgb(19, 190, 110);
+    transition: 1s;
+}
+
+
+.input-eventos .input-evet-nomeutilivador{
+    margin: 0%;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 410px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px 1px 1px ;
+    border-color: #ccc;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400px;
+    outline: none;
+}
+
+.input-eventos .input-evet-nomeutilivador:invalid{
+    border-left: 7px solid rgb(150, 33, 33);
+    transition: 1s;
+}
+
+.input-eventos .input-evet-nomeutilivador:valid{
+    border-left: 7px solid rgb(19, 190, 110);
+    transition: 1s;
+}
+

@@ -1,0 +1,44 @@
+body, html{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+main figure{
+    margin: 0%;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    margin-left: 650px;
+    margin-top: 100px;
+}
+
+main img{
+    margin: 0%;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+main input{
+    
+    width: 200px;
+    margin-top: 20px;
+    height: 30px;
+    border: 1px solid #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main p{
+    color: red;
+}
+
+main input:hover{
+    background-color: #ccc;
+}
+
+
+thead{
+    background-color: aqua;
+}
